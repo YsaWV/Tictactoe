@@ -47,12 +47,28 @@ class Console_game
         board.update(move, player_1.marker)
     end
 
+    def game_over?        
+        board.full_board?
+    end
+
+    def end_message
+        if 
+            board.full_board?
+            puts "#{player_1.marker} is the winner!"
+          
+        end
+    end
+
 end
 
 game = Console_game.new()
+until game.game_over?
+    game.draw_board
 
-game.draw_board
+    move = game.get_move
+    game.make_move(move)
+    game.draw_board
 
-move = game.get_move
-game.make_move(move)
-game.draw_board
+end
+
+game.end_message

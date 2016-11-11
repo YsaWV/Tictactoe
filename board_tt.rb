@@ -25,9 +25,9 @@ class Board
         end
     end
 
-    # def full_board?
-    #     grid.count("") == 0        
-    # end
+    def full_board?
+        grid.count("") == 0        
+    end
 
     # def winner?(marker)
     #     grid[0] == marker && grid[1] == marker && grid[2] == marker ||
