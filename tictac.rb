@@ -10,11 +10,11 @@ board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
 
 
 
-i = rand(0..8)
-board[i] = "X"
-board[i+1] = "O"
+# i = rand(0..8)
+# board[i] = "X"
+# board[i+1] = "O"
 
-display_board(board)
+display_board(board) 
 
 
 

@@ -1,9 +1,3 @@
-# class TicTacToe()
-# 	def border()
-# 		puts ("___|___|___")
-# 	end 
-
-# end
 
 def border()
  		a = ("___|___|___")
@@ -11,11 +5,7 @@ def border()
 
  		2.times {puts a}
  		puts b
- # end 
-
- # border()
-
- # def fill()
+ 
  	c = ("_X_|___|___")
 
  	puts c
@@ -23,10 +13,10 @@ def border()
  	puts b
 
 
- end
+end
 
 border()
- # fill()
+
 
 
 
